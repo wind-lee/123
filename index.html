@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache,no-store,must-revalidate">
+    <META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT">
+    <meta name="viewport" content="width=device-width">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no;">
+    <title>个人详情</title>
+    <link rel="stylesheet" href="./css/personalDisplay.css"/>
+    <!--<script src="./js/jquery-1.11.1.min.js"></script>-->
+</head>
+<body>
+<div class="content">
+    <header>
+         <!--<img src="images/顶部背景.png" alt="">-->
+        <!--<p class="header-left"><span>返回</span></p>-->
+        <!--<p class="header-right"><span>保存</span></p>-->
+        <div class="head-face">
+            <div class="head-face-img">
+                <img src="./images/头像大小.png" height="225" width="225" alt=""/>
+            </div>
+            <div class="head-face-userface" id="head-face-userface">
+                亮亮招聘
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-one">
+            <form action="#" name="#">
+                <div class="main-one-editExpect">
+                    <span class="main-one-hope">基本信息<span class="need">(必填)</span></span>
+                    <span id="main-one-click" class="main-one-click" >
+                        <img src="./images/click.gif" alt=""/>
+                    </span>
+                </div>
+
+                <!--模板开始-->
+
+                <!--模板结束-->
+                <div id="one-data" class="one-data">
+                    <ul class="one-ul">
+                        <li>
+                        年<span class="one-gap"></span>龄:<span  class="one-span">22</span>
+                        </li>
+                        <li>
+                        性<span class="one-gap"></span>别:<span class="one-span">男</span>
+                        </li>
+                        <li>
+                            目前所在地<span class="colon">:</span><span class="one-span">广东深圳市南山区</span>
+                        </li>
+                        <li>
+                            <span class="space">工作年限</span>:<span  class="one-span"><span class="fixed">2</span>年</span>
+                        </li>
+                        <li>
+                        电<span class="one-gap"></span>话:<span class="one-span">158-8888-8888</span>
+                        </li>
+                        <li>
+                            户<span class="one-gap"></span>籍:<span class="one-span">广东省广州市</span>
+                        </li>
+                    </ul>
+                </div>
+                
+            </form>
+        </div>
+
+        <!--工作经验-->
+        <div class="main-three">
+            <form action="#">
+                <div class="main-three-editExpect">
+                    <span class="main-three-hope">经验/特长<span class="need">(选填)</span></span>
+                    <span id="main-three-click" class="main-three-click">
+                        <img src="./images/click.gif" alt=""/>
+                    </span>
+                </div>
+                <div class="three-data" id="three-data">
+                    <div id="three-textarea" class="three-textarea"  >
+                        <p class="three-time">2016年-06月-01日到2016年10月31日</p>
+                        <p id="three-definition" class="three-definition">相恋集团</p>
+                        <div class="">
+                            最好不相见&nbsp;便可不相恋<br/>
+                            最好不相知&nbsp;便可不相思<br/>
+                            最好不相伴&nbsp;便可不相欠<br/>
+                            最好不相惜&nbsp;便可不相忆<br/>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+
+
+        <!--视频简历-->
+        <div class="main-four">
+            <form action="#">
+                <div class="main-four-editExpect">
+                    <span class="main-four-hope">视频简历<span class="need">(选填)</span></span>
+                    <span class="main-four-click" id="main-four-click">
+                        <img src="./images/click.gif" alt=""/>
+                    </span>
+                </div>
+                <div class="four-video-content">
+                    <video id="four-video" class="four-video"  preload="metadata" autoplay controls volume loop>
+                        <!--<source src="videos/bg.webm" type="video/webm">-->
+                        <source id="jobvideo" src="video/Don.MP4" type="video/mp4">
+                        您的浏览器不支持视频，请升级浏览器；
+                    </video>
+                </div>
+
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-p-img">
+            <img src="./images/logo.png" alt=""/>
+        </p>
+        <p class="footer-p-text">
+            该简历由亮亮招聘APP制作而成
+        </p>
+    </footer>
+</div>
+
+
+
+</body>
+</html>
+<script type="text/template" id="template01">
+    <ul class="one-ul">
+        <li>
+            年<span class="one-gap"></span>龄:<span  id="age" class="one-span"><-=age-></span>
+        </li>
+        <li>
+            性<span class="one-gap"></span>别:<span id="gender" class="one-span"><-=gender-></span>
+        </li>
+        <li>
+            目前所在地<span class="colon">:</span><span id="suozaidi" class="one-span"><-=suozaidi-></span>
+        </li>
+        <li>
+            <span class="space">工作年限</span>:<span  class="one-span"><span id="nianxian" class="fixed"><-=nianxian-></span>年</span>
+        </li>
+        <li>
+            电<span class="one-gap"></span>话:<span id="phone" class="one-span"><-=phone-></span>
+        </li>
+        <li>
+            户<span class="one-gap"></span>籍:<span id="huji" class="one-span"><-=huji-></span>
+        </li>
+    </ul>
+</script>
+
+
+<!--工作经验模板-->
+<script type="text/template03" id="template03">
+        <p  class="three-time"><-=time-></p>
+        <h3 class="three-definition"><-=definition-></h3>
+        <div class="three-evaluation"><-=evaluation-></div>
+
+</script>
+
+<script src="./js/template-native.js"></script>
+<script src="./js/jquery-3.0.0.min.js"></script>
+<script src="./js/resume.js"></script>
+

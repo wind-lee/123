@@ -1,0 +1,428 @@
+﻿@charset "utf-8";
+body,ul,li,ol,p{
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    outline: none;
+}
+ul,ol{
+    list-style: none;
+}
+div a{
+    text-decoration: none;
+}
+.clearfix{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+.content{
+    max-width: 640px;
+    min-width: 320px;
+    margin:0 auto;
+    background-color:#EFEFF4;
+    position: relative;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 162px;
+    background-color: #008BE7;
+}
+header  .head-face {
+    width:102px;
+    height:128px;
+    margin:0 auto;
+    position: absolute;
+    top:18%;
+    left: 36%;
+}
+header .head-face .head-face-img{
+    width: 89px;
+    height: 89px;
+    -webkit-border-radius:50%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+header .head-face .head-face-img  img{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    -webkit-border-radius:50%;
+    border-radius: 50%;
+}
+header  .head-face .head-face-userface{
+    font:bold 20px/20px "";
+    color:white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/*内容区*/
+main{
+    width: 98%;
+    margin: 0 auto;
+}
+main .main-one{
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    padding-top: 12px;
+    padding-bottom: 22px;
+    border-radius: 4px;
+    font: 400 18px "";
+}
+
+/*基本信息的展示页*/
+main .main-one .main-one-editExpect{
+    width: 100%;
+    color: #5F5F5F;
+}
+main .main-one .main-one-editExpect:after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid  #5F5F5F;
+    margin:8px 10px 18px 18px;
+    opacity: .6;
+}
+/* 期望工作标头 */
+main .main-one .main-one-hope{
+    font: 700 16px/22px "宋体";
+    padding-left: 18px;
+    color: #5F5F5F;
+}
+/* 点击按钮 */
+main .main-one .main-one-editExpect .main-one-click{
+    width:65px;
+    height: 28px;
+    display: block;
+    float: right;
+    padding-right: 2px;
+}
+main .main-one .main-one-editExpect .main-one-click img{
+    width: 96%;
+    height: 96%;
+}
+
+
+/* 个人信息栏 */
+main .main-one .main-one-editInfo{
+    width: 100%;
+    height: 80px;
+}
+/* 点击按钮 */
+main .main-one .main-one-editInfo .main-one-click{
+    width:65px;
+    height: 28px;
+    display: block;
+    float: right;
+    margin-top: 8px;
+    padding-right: 2px;
+}
+main .main-one .main-one-editInfo .main-one-click img{
+    width: 96%;
+    height: 96%;
+}
+main .main-one .one-ul{
+    opacity: .8;
+    font-family: "宋体";
+    padding-left: 26px;
+}
+.main-one .one-ul li{
+    padding: 6px 5px;
+    color: #5F5F5F;
+}
+.main-one .one-ul li  .one-span{
+    height: 22px;
+    width: 50%;
+    padding-left: 12px;
+    text-indent: 4px;
+    color: #5F5F5F;
+}
+/*所在地间隔*/
+.main-one .one-ul li .toponym{
+    padding: 0 10px;
+}
+.main-one .one-ul li .one-gap{
+    padding: 0 28px;
+}
+/* 第二栏期望工作 */
+main .main-two{
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    padding-top: 12px;
+    padding-bottom: 22px;
+    border-radius: 4px;
+    font: 400 18px "";
+}
+main .main-two .main-two-editExpect{
+    width: 100%;
+    color: #5F5F5F;
+}
+main .main-two .main-two-editExpect:after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid  #5F5F5F;
+    margin:8px 10px 18px 18px;
+    opacity: .6;
+}
+/* 期望工作标头 */
+main .main-two .main-two-hope{
+    font: 700 16px/22px "宋体";
+    padding-left: 18px;
+    color: #5F5F5F;
+}
+/* 点击按钮 */
+main .main-two .main-two-editExpect .main-two-click{
+    width:65px;
+    height: 28px;
+    display: block;
+    float: right;
+    padding-right: 2px;
+}
+main .main-two .main-two-editExpect .main-two-click img{
+    width: 96%;
+    height: 96%;
+}
+main .main-two .two-ul{
+    font-family: "宋体";
+    padding-left: 26px;
+    opacity: .8;
+}
+main .main-two .two-ul li{
+    padding: 6px 5px;
+    color: #5F5F5F;
+}
+
+main .main-two .two-ul li  .two-span{
+    height: 22px;
+    width: 50%;
+    padding-left: 12px;
+    text-indent: 4px;
+    color: #5F5F5F;
+}
+
+
+/* 第三栏期望工作 */
+main .main-three{
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    padding-top: 12px;
+    padding-bottom: 22px;
+    border-radius: 4px;
+    font: 400 15px "";
+}
+main .main-three .main-three-editExpect{
+    width: 100%;
+    color: #5F5F5F;
+}
+
+main .main-three .three-data{
+    /*height: 20%;*/
+    min-height: 122px;
+}
+main .main-three .main-three-editExpect:after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid  #5F5F5F;
+    margin:8px 10px 10px 18px;
+    opacity: .6;
+}
+/* 工作经验标头 */
+main .main-three .main-three-hope{
+    font: 700 16px/22px "宋体";
+    padding-left: 18px;
+    color: #5F5F5F;
+}
+/* 点击按钮 */
+main .main-three .main-three-editExpect .main-three-click{
+    width:65px;
+    height: 28px;
+    display: block;
+    float: right;
+    padding-right: 2px;
+}
+main .main-three .main-three-editExpect .main-three-click img{
+    width: 96%;
+    height: 96%;
+}
+
+
+/* 第四栏期望工作 */
+main .main-five{
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    padding-top: 12px;
+    padding-bottom: 22px;
+    border-radius: 4px;
+    font: 400 15px "";
+}
+main .main-five .main-five-editExpect{
+    width: 100%;
+    color: #5F5F5F;
+}
+
+main .main-five .five-data{
+    min-height: 122px;
+}
+main .main-five .main-five-editExpect:after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid  #5F5F5F;
+    margin:8px 10px 10px 18px;
+    opacity: .6;
+}
+/* 工作经验标头 */
+main .main-five .main-five-hope{
+    font: 700 16px/22px "宋体";
+    padding-left: 18px;
+    color: #5F5F5F;
+}
+/* 点击按钮 */
+main .main-five .main-five-editExpect .main-five-click{
+    width:65px;
+    height: 28px;
+    display: block;
+    float: right;
+    padding-right: 2px;
+}
+main .main-five .main-five-editExpect .main-five-click img{
+    width: 96%;
+    height: 96%;
+}
+
+
+
+/*textarea文本框*/
+.main-three .three-textarea,.main-five .five-textarea{
+    width: 92%;
+    height: 100%;
+    /*padding-left: 26px;*/
+    padding: 0 22px;
+    color:#5F5F5F ;
+    border:none;
+    opacity: .8;
+    /*overflow: auto;*/
+    /*让文字超出宽时上下滑动,而不是默认的左右*/
+    overflow-x: hidden;
+    word-break:break-all;
+}
+
+
+/* 第四栏期望工作 */
+main .main-four{
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    padding-top: 12px;
+    padding-bottom: 22px;
+    border-radius: 4px;
+    font: 400 20px "";
+}
+main .main-four .main-four-editExpect{
+    width: 100%;
+    color: #5F5F5F;
+}
+main .main-four .main-four-editExpect:after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid gray;
+    margin:8px 10px 4px 18px;
+}
+/* 期望工作标头 */
+main .main-four .main-four-hope{
+    font: 700 16px/22px "宋体";
+    padding-left: 18px;
+    color: #5F5F5F;
+}
+/* 点击按钮 */
+main .main-four .main-four-editExpect .main-four-click{
+    width:65px;
+    height: 28px;
+    display: block;
+    float: right;
+    padding-right: 4px;
+}
+main .main-four .main-four-editExpect .main-four-click img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*视频展示*/
+
+main .main-four  .four-video-content{
+    width: 100%;
+    height: 270px;
+}
+main .main-four  .four-video{
+    width: 100%;
+    height: 290px;
+}
+
+
+
+/*底部*/
+footer{
+    width: 100%;
+    height: 80px;
+}
+footer .footer-p-img{
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+}
+footer .footer-p-img img{
+    width: 100%;
+    height: 100%;
+}
+footer .footer-p-text{
+    text-align: center;
+    color: #5F5F5F;
+    font: 600 14px/20px "";
+}
+
+
+/*必填与选填*/
+main .need{
+    font:400 12px "" ;
+    color: orange;
+}
+.main-three  .three-data  .three-time{
+    font:400 10px "";
+    color: #5F5F5F;
+}
+.main-three  .three-data  .three-definition{
+    font:500 17px "";
+    color: #5F5F5F;
+    padding: 5px 0;
+    opacity: 1;
+    font-family:sans-serif
+}
+/*字体间距*/
+.main-one .one-ul .space{
+    letter-spacing:5px;
+}
+.main-one .one-ul  .fixed{
+    padding:0px;
+}
+
+.main-one .one-ul li .apanage{
+}
+.main-one .one-ul .colon{
+    padding-left: 2px;
+}
